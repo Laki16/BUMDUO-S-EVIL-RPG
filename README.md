@@ -13,4 +13,4 @@ EVIL RPG?
 CONTRIBUTORS
 -------------
  - Laki16(HANBUM LEE)
- - Cradirow(Yunbum HAN)
+ - Cradirow(YUNBUM HAN)
