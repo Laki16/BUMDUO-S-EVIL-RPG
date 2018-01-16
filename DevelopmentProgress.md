@@ -14,3 +14,9 @@ Development Progress
 	- online으로 endless/hardcore 모드(Ranking)
 	- 이전 스테이지의 결과가 다음 스테이지에 영향을 미침(병사 수, 체력, 아이템 등등)
 	- 전체 재화는 미미한 영향 또는 외형적 옵션
+
+3. **기대해 볼 수 있는 기술적 요소**
+	- Unity3D
+	- DB연동
+	- 웹/앱 서버환경구축
+	- VR test
