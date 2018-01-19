@@ -44,5 +44,16 @@ Development Progress
 	- 용사가 보스방에 입장하면 유저의 패배로 게임이 끝난다.
 	- 사실 보스는 마법사로써 원거리 스킬만 쓸 수 있었던 것
 	- 만약 용사가 스테이지를 다 깨지 못한다면 유저는 용사의 아이템을 파밍하고 게임이 끝난다.
-	
-	
+
+5. **필드 구현**
+	- base :terrain(draw 해제해서 투명하게)
+	- 구성단위 : 5x5 plane object + cube (1자형, ㄴ자형, T자형, 십자형, 막다른길)
+	- plane(바닥 or 길 텍스쳐), cube(옆모습(ex. 숲의모습, 동굴벽의모습)텍스쳐)
+	- terrain 보다 plane을 미세하게 낮게 조정한 후 nav bake 하여 이동영역 제한
+	- 구성 단위들로 맵구성(온라인은 랜덤으로)
+
+6. **알고리즘(abstract note)**
+	- base : 2 / other : 3 / between : 3 ---> -1
+	- count_min < cost(%) < count_max (difficulty(ex under20%), variable(by ability)) makes player don't loose ( higher -> lower)
+	- array(starting/(cost)/route)
+
