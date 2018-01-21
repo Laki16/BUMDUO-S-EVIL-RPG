@@ -57,6 +57,9 @@ public class AIController : MonoBehaviour
         //add  or 4방면일 경우에 한해 4방면 ray 해서 Plane이면 일단이동(Plane만 골라서 이동하다보면 벽을 뚫지도 않을것이고, 가다보면 언젠가 weight 가 0이아닌곳을 찾을것. 그러면 다시 루프 탈출
         Array.Copy(direction, direction_check, 4);
 
+        //add  적은순으로 3개의 합이 0이면 stuck plane 인것
+        Array.Sort(direction_check);
+
         for (int i = 0; i < 3; i++)
             direct_sum = direct_sum + direction_check[i];
 
